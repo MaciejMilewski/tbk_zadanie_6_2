@@ -16,4 +16,4 @@ Połączenie serwisów server i client zostało zrealizowane dzięki:
 - docker container run --name server --net test_network -p 3000:3000 -d server-node (przekazujemy test-net jako parametr)
 - docker container run --name api-test --net test_network -e BASE_URL="http://server:3000" client-node (przekazujemy test-net jako parametr)
 
-Dzięki temu server i klient są przypisane do tej samej sieci i mogą wysyłać zapytania HTTp między sobą.
+Dzięki temu server i klient są przypisane do tej samej sieci i mogą wysyłać zapytania HTTP między sobą.
